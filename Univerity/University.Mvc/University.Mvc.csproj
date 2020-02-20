@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\University.Data\University.Data.csproj" />
+    <ProjectReference Include="..\University.IoC\University.IoC.csproj" />
   </ItemGroup>
 
 </Project>
