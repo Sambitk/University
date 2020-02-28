@@ -4,13 +4,14 @@ using System.Text;
 using University.Application.Interfaces;
 using University.Application.ViewModels;
 using University.Data.Repository;
+using University.Domain.Core.Interfaces;
 
 namespace University.Application.Services
 {
     public class CourseService : ICourseService
     {
-        private CourseRepository _courseRepository;
-        public CourseService(CourseRepository courseRepository)
+        private ICourseRepository _courseRepository;
+        public CourseService(ICourseRepository courseRepository)
         {
             _courseRepository = courseRepository;
         }

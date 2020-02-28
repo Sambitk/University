@@ -1,0 +1,14 @@
+﻿@model University.Application.ViewModels.CourseViewModel
+
+<div class="container body-content">
+    <div class="course-content">
+        @foreach (var course in Model.Courses)
+        {
+            <div class="box-shadow">
+                <b>Course: </b> @course.CourseName <br />
+                <div><b>Description: </b>@course.CourseDescription</div>
+                <div><span><b>Number of Students#</b> @course.NumberOfStudents.ToString()</span></div>
+            </div>
+        }
+    </div>
+</div>
