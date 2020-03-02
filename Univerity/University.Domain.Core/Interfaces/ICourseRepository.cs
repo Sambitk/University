@@ -8,5 +8,6 @@ namespace University.Domain.Core.Interfaces
     public interface ICourseRepository
     {
         IEnumerable<Course> GetCourses();
+        void Add(Course course);
     }
 }

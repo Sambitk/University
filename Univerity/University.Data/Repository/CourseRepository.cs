@@ -14,6 +14,13 @@ namespace University.Data.Repository
         {
             _universityDbContext = context;
         }
+
+        public void Add(Course course)
+        {
+            _universityDbContext.Add(course);
+            _universityDbContext.SaveChanges();
+        }
+
         public IEnumerable<Course> GetCourses()
         {
             return _universityDbContext.Courses;
